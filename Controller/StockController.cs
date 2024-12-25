@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using starterProject.Data;
 using starterProject.Dtos.Stock;
+using starterProject.Helper;
 using starterProject.Interfaces;
 using starterProject.Mappers;
 
@@ -25,10 +26,10 @@ namespace starterProject.Controller
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll(){
+        public async Task<IActionResult> GetAll([FromQuery] QueryObject query){
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var stocks=await _stockRepo.getAllAsync();
+            var stocks=await _stockRepo.getAllAsync(query);
             var stockDtos=stocks.Select(s=>s.ToStockDto());
             return Ok(stocks);
         }
