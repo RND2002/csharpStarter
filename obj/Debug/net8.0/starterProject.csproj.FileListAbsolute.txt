@@ -121,3 +121,8 @@ C:\Users\aryan\Desktop\dotnetProject\starterProject\obj\Debug\net8.0\refint\star
 C:\Users\aryan\Desktop\dotnetProject\starterProject\obj\Debug\net8.0\starterProject.pdb
 C:\Users\aryan\Desktop\dotnetProject\starterProject\obj\Debug\net8.0\starterProject.genruntimeconfig.cache
 C:\Users\aryan\Desktop\dotnetProject\starterProject\obj\Debug\net8.0\ref\starterProject.dll
+C:\Users\aryan\Desktop\dotnetProject\starterProject\obj\Debug\net8.0\starterProject.sourcelink.json
+C:\Users\aryan\Desktop\dotnetProject\starterProject\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\aryan\Desktop\dotnetProject\starterProject\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\aryan\Desktop\dotnetProject\starterProject\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\aryan\Desktop\dotnetProject\starterProject\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

@@ -16,7 +16,8 @@ namespace starterProject.Mappers
                 CompanyName=stockModel.CompanyName,
                 Purchase=stockModel.Purchase,
                 LastDue=stockModel.LastDue,
-                MarketCap=stockModel.MarketCap
+                MarketCap=stockModel.MarketCap,
+                Comments=stockModel.Comments.Select(c=>c.toCommentResponse()).ToList()
             };
         }
 

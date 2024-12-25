@@ -18,5 +18,7 @@ namespace starterProject.Interfaces
         Task<Stock?> updateAsync(int id,UpdateStockRequestDto requestDto);
 
         Task<Stock?> deleteAsync(int id);
+
+        Task<bool> StockExists(int id);
     }
 }

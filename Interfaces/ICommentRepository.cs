@@ -9,5 +9,9 @@ namespace starterProject.Interfaces
     public interface ICommentRepository
     {
         Task<List<Comment>> getAllAsync();
+
+        Task<Comment?> getByIdAsync(int id);
+
+        Task<Comment> CreateAsync(Comment comment);
     }
 }

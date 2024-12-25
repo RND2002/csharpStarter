@@ -17,9 +17,22 @@ namespace starterProject.Repository
             _context=context;
             
         }
+
+        public async Task<Comment> CreateAsync(Comment comment)
+        {
+             await _context.AddAsync(comment);
+             await _context.SaveChangesAsync();
+             return comment;
+        }
+
         public async Task<List<Comment>> getAllAsync()
         {
             return await _context.Comments.ToListAsync();
+        }
+
+        public async Task<Comment?> getByIdAsync(int id)
+        {
+            return await _context.Comments.FindAsync(id);
         }
     }
 }
